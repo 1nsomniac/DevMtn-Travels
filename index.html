@@ -32,11 +32,11 @@
             <nav>
                 <ul>
                     <!--Navigation section, this is where you will put your ui-sref's so you can naviagte to different views -->
-                    <li><a>Locations</a></li>
-                    <li><a>Packages</a></li>
-                    <li><a><img src="./img/DevCircleWhite.svg" alt="DevMountain Logo"></a></li>
-                    <li><a>About</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a ui-sref = "locations">Locations</a></li>
+                    <li><a ui-sref = 'packages'>Packages</a></li>
+                    <li><a ui-sref = 'home'><img src="./img/DevCircleWhite.svg" alt="DevMountain Logo"></a></li>
+                    <li><a ui-sref = "adventures">About</a></li>
+                    <li><a ui-sref = "contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,11 +44,18 @@
     </section>
 
 
-
 <!-- Here we are placing the ui-view tag this is where our views will be injected when we change routes. -->
 
     <ui-view></ui-view>
 
+    <!--<div style = "background-color: gainsboro; width: 100px; height: 100px; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid palegoldenrod">
+    </div>
+    <div style = "background-color: transparent; width: 100px; height: 100px; border-left: 50px solid transparent; border-right: 50px solid transparent; border-top: 50px solid sandybrown; margin: -100px 0 0 0;">
+    </div>
+    <div style = "background-color: transparent; width: 100px; height: 100px; border-left: 50px solid mediumturquoise; border-right: 0px solid transparent; border-bottom: 50px solid transparent; margin: -100px 0 0 0; border-top: 50px solid transparent;">
+    </div>
+    <div style = "background-color: transparent; width: 100px; height: 100px; border-left: 50px solid transparent; border-right: 50px solid transparent; border-top: 50px solid sandybrown; margin: -100px 0 0 0;">
+    </div>-->
 
 </main>
 
@@ -57,7 +64,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
 <!--Our Custom Script Files-->
-<script src="./js/app.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/services/mainService.js"></script>
+<script src="js/controllers/about-adventurersCtrl.js"></script>
+<script src="js/controllers/bookedCtrl.js"></script>
+<script src="js/controllers/locationsCtrl.js"></script>
+<script src="js/controllers/packagesCtrl.js"></script>
 
 
 </body>
